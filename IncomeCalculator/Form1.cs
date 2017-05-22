@@ -24,6 +24,7 @@ namespace IncomeCalculator
 
         private void home_Load(object sender, EventArgs e)
         {
+           
 
         }
 
@@ -31,9 +32,23 @@ namespace IncomeCalculator
         {
             if (!string.IsNullOrEmpty(wagetxt.Text) && !string.IsNullOrEmpty(hourstxt.Text))
             {
+                try
+                {
+
                 float wage = Single.Parse(wagetxt.Text);
                 float hours = Single.Parse(hourstxt.Text);
                 totaltxt.Text = string.Format("£{0:0.00}", wage * hours);
+
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Only numbers please");
+                    wagetxt.Clear();
+                    hourstxt.Clear();
+
+                }
+
+               
             }
 
         }

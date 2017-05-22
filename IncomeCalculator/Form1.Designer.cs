@@ -78,7 +78,7 @@
             // 
             this.totallbl.AutoSize = true;
             this.totallbl.Font = new System.Drawing.Font("Arial Narrow", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.totallbl.Location = new System.Drawing.Point(12, 190);
+            this.totallbl.Location = new System.Drawing.Point(12, 269);
             this.totallbl.Name = "totallbl";
             this.totallbl.Size = new System.Drawing.Size(254, 25);
             this.totallbl.TabIndex = 4;
@@ -87,19 +87,18 @@
             // totaltxt
             // 
             this.totaltxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.totaltxt.Location = new System.Drawing.Point(262, 184);
+            this.totaltxt.Location = new System.Drawing.Point(272, 259);
             this.totaltxt.Name = "totaltxt";
             this.totaltxt.ReadOnly = true;
             this.totaltxt.Size = new System.Drawing.Size(104, 35);
             this.totaltxt.TabIndex = 5;
-            this.totaltxt.Text = "£";
             this.totaltxt.TextChanged += new System.EventHandler(this.totaltxt_TextChanged);
             // 
             // calculatebtn
             // 
             this.calculatebtn.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.calculatebtn.Font = new System.Drawing.Font("Comic Sans MS", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.calculatebtn.Location = new System.Drawing.Point(17, 131);
+            this.calculatebtn.Location = new System.Drawing.Point(12, 215);
             this.calculatebtn.Name = "calculatebtn";
             this.calculatebtn.Size = new System.Drawing.Size(145, 40);
             this.calculatebtn.TabIndex = 6;
@@ -112,7 +111,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.ClientSize = new System.Drawing.Size(366, 248);
+            this.ClientSize = new System.Drawing.Size(419, 334);
             this.Controls.Add(this.calculatebtn);
             this.Controls.Add(this.totaltxt);
             this.Controls.Add(this.totallbl);
@@ -122,6 +121,7 @@
             this.Controls.Add(this.wagelbl);
             this.MaximizeBox = false;
             this.Name = "home";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Income Calulator";
             this.Load += new System.EventHandler(this.home_Load);
             this.ResumeLayout(false);
